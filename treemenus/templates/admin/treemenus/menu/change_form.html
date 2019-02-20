@@ -10,7 +10,7 @@
 
       <div class="form-row" >
         <img src="{% get_treemenus_static_prefix %}/icon_addlink.gif" width="10" height="10"/>
-        <a href="../items/add/">{% trans "Add an item" %}</a>
+        <a href="items/add/">{% trans "Add an item" %}</a>
       </div>
 
       <style type="text/css">
@@ -40,7 +40,7 @@
                 </td>
               {% else %}
                 <td width="35%">
-                  <a href="../items/{{ menu_item.pk }}/">{{ menu_item.caption_with_spacer|safe }}</a>
+                  <a href="items/{{ menu_item.pk }}/">{{ menu_item.caption_with_spacer|safe }}</a>
                 </td>
                 <td width="25%">
                   {{ menu_item.url }}
@@ -53,7 +53,7 @@
               {% if menu_item.has_siblings %}
                 {% ifnotequal menu_item.rank menu_item.siblings.count %}
                   <td width="20" align="center">
-                    <a href="../items/{{ menu_item.pk }}/move_down/">
+                    <a href="items/{{ menu_item.pk }}/move_down/">
                       <img src="{% get_treemenus_static_prefix %}/arrow-down.gif" border="0" alt="{% trans 'Down' %}"/>
                     </a>
                   </td>
@@ -63,7 +63,7 @@
 
                 {% ifnotequal menu_item.rank 0 %}
                   <td width="20" align="center">
-                    <a href="../items/{{ menu_item.pk }}/move_up/">
+                    <a href="items/{{ menu_item.pk }}/move_up/">
                       <img src="{% get_treemenus_static_prefix %}/arrow-up.gif" border="0" alt="{% trans 'Up' %}"/>
                     </a>
                   </td>
