@@ -13,7 +13,7 @@ setup(
     packages=find_packages(),
     package_data={
         'treemenus': [
-            'static/img/treemenus/*.gif',
+            'static/treemenus/img/*.gif',
             'templates/admin/treemenus/menu/*.html',
             'templates/admin/treemenus/menuitem/*.html',
         ]
